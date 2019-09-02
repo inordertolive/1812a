@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
+phpinfo();die;
     return view('welcome');
 });
+Route::get('/add/user','TestController@add');
+Route::get('/get/redis','TestController@redis');
+
+
