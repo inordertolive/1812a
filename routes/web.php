@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-phpinfo();die;
+#phpinfo();die;
     return view('welcome');
 });
 Route::get('/add/user','TestController@add');
