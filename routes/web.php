@@ -23,3 +23,6 @@ Route::get('/get/redis','TestController@redis');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//c测试读写分离
+Route::get('/insert_web', 'SqlController@insert_web');
+Route::post('/insert', 'SqlController@insert');
